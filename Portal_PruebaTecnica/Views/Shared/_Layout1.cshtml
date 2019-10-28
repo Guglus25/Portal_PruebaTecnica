@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/extras.1.1.0.min.css" rel="stylesheet" />
+    <link href="~/css/shards-dashboards.1.1.0.css" rel="stylesheet" />
+    <link href="~/css/shards-dashboards.1.1.0.min.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome-all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Main Sidebar -->
+      
+            <!-- End Main Sidebar -->
+            <main class="main-content col-lg-12 col-md-12 col-sm-12 ">
+                <div class="main-navbar sticky-top bg-white">
+                    <!-- Main Navbar -->
+                    <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4 ">
+                            <div class="form-group">
+                                <a href="/Index/Index" class="btn btn-primary">Código ISO</a>
+                                <a href="/Cadena/Cadena" class="btn btn-primary">Generar Cadenas</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </nav>
+                </div>
+                <div class="page-header row no-gutters py-4">
+                    <div class="main-content-container container-fluid px-4">
+                        <div class="row">
+                            <div class="col-lg-12 ">
+                                @RenderBody()
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
